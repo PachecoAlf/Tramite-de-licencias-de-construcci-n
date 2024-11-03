@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Construcción - Arq. Alfonso Pacheco</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <header class="bg-blue-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Servicios Profesionales de Construcción</h1>
+            <p class="text-xl mb-8">Diseño Arquitectónico, Estructural y Estudios de Suelos</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Architectural Service -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="text-blue-900 text-4xl mb-4">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Diseño Arquitectónico</h3>
+                <ul class="mb-4">
+                    <li class="mb-2">✓ Planos arquitectónicos completos</li>
+                    <li class="mb-2">✓ Acompañamiento en licenciamiento</li>
+                    <li class="mb-2">✓ Asesoría técnica</li>
+                    <li class="mb-2">✓ Visitas técnicas disponibles</li>
+                </ul>
+                <p class="font-bold">Desde $2,500,000 COP</p>
+            </div>
+
+            <!-- Structural Service -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="text-blue-900 text-4xl mb-4">
+                    <i class="fas fa-columns"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Diseño Estructural</h3>
+                <ul class="mb-4">
+                    <li class="mb-2">✓ Memoria de cálculo estructural</li>
+                    <li class="mb-2">✓ Planos estructurales detallados</li>
+                    <li class="mb-2">✓ Diseño según NSR-10</li>
+                    <li class="mb-2">✓ Acompañamiento técnico</li>
+                </ul>
+                <p class="font-bold">Desde $2,500,000 COP</p>
+            </div>
+
+            <!-- Soil Study Service -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="text-blue-900 text-4xl mb-4">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Estudio de Suelos</h3>
+                <ul class="mb-4">
+                    <li class="mb-2">✓ Sondeos mecánicos</li>
+                    <li class="mb-2">✓ Ensayos de laboratorio</li>
+                    <li class="mb-2">✓ Informe técnico completo</li>
+                    <li class="mb-2">✓ Recomendaciones de cimentación</li>
+                </ul>
+                <p class="font-bold">Desde $1,500,000 COP</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">¡Contáctenos!</h2>
+            <div class="max-w-lg mx-auto">
+                <button onclick="contactWhatsApp()" class="bg-green-600 text-white w-full py-3 rounded-lg text-lg font-bold flex items-center justify-center hover:bg-green-700 transition-colors">
+                    <i class="fab fa-whatsapp mr-2 text-2xl"></i>
+                    Contactar por WhatsApp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">Arq. Alfonso Pacheco Rodríguez</p>
+            <p class="mb-2">Mat. Professional: 08700-11230</p>
+            <p>40 años de experiencia en diseño arquitectónico</p>
+        </div>
+    </footer>
+
+    <script>
+        function contactWhatsApp() {
+            // Reemplaza este número con tu número real sin el símbolo + y sin espacios
+            // Por ejemplo, para +57 300 123 4567 sería: "573001234567"
+            const phoneNumber = "573243199584";
+            const message = "Hola, estoy interesado en sus servicios de construcción.";
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
